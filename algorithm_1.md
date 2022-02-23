@@ -176,3 +176,47 @@ for i in range(len(word)):
     print(word[i],end="")
 ```
 
+
+
+### 3. 실습
+
+
+
+- 백준 - #10995: 별 찍기 - 20
+
+``` python
+N = int(input())
+for i in range(N):
+  if i%2 != 0:
+    print(" *"*N)
+  else:
+    print("* "*N)
+```
+
+
+
+- 백준 - #2675: 문자열 반복
+
+``` python
+num = int(input())
+for i in range(num):
+  S = input()
+  T = S.split(" ")
+  number = int(T[0])
+  word = list(T[1])
+  for j in range(len(word)):
+    print(word[j]*number,end="")
+  print()
+```
+
+
+
+- 백준 - #2941: 크로아티아 알파벳
+
+``` python
+words = ["c=", "c-", "dz=", "d-", "lj", "nj" ,"s=", "z="]
+k = input()
+for i in words:
+  k = k.replace(i,"&")
+print(len(k))
+```
