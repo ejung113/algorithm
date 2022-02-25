@@ -82,3 +82,28 @@ for i in range(8):
         cnt += 1
 print(cnt)
 ```
+
+
+
+### 2. 실습
+
+
+
+- 백준 - #2953: 나는 요리사다
+
+``` python
+# 1
+result = [sum(list(map(int, input().split()))) for i in range(5)]
+max_sum_score = max(result)
+print(result.index(max_sum_score)+1,max_sum_score)
+
+# 2
+temp =[]
+for i in range(5):
+  score = list(map(int, input().split()))
+  sum_score = sum(score)
+  temp.append(sum_score)
+  max_sum_score = max(temp)
+print(temp.index(max_sum_score)+1,max_sum_score)
+```
+
