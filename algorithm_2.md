@@ -107,3 +107,20 @@ for i in range(5):
 print(temp.index(max_sum_score)+1,max_sum_score)
 ```
 
+
+
+- 백준 - #4344: 평균은 넘겠지
+
+```python
+num = int(input())
+for i in range(num):
+  a = list(map(int, input().split()))
+  sum_a = sum(a) - a[0]
+  ave = sum_a / a[0]
+  cnt = 0
+  for j in range(1, len(a)):
+    if a[j] > ave:
+      cnt += 1
+  print("{:.3f}".format(cnt / a[0] * 100)+"%")
+```
+
