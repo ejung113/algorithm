@@ -124,3 +124,21 @@ for i in range(num):
   print("{:.3f}".format(cnt / a[0] * 100)+"%")
 ```
 
+
+
+- 백준 - #2947: 나무 조각
+
+```python
+num = list(map(int,input().split()))
+final = [1, 2, 3, 4, 5]
+while True:
+  for i in range(len(num)-1):
+    if num[i] > num[i+1]:
+      temp = num[i]
+      num[i] = num[i+1]
+      num[i+1] = temp
+      print(" ".join(map(str, num)))
+  if num == final:
+    break
+```
+
